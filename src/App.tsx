@@ -1,5 +1,11 @@
+import Header from "./components/header";
+
 function App() {
-  return <div className="flex bg-amber-700">123456</div>;
+  return (
+    <div className="flex width-full">
+      <Header></Header>
+    </div>
+  );
 }
 
 export default App;
