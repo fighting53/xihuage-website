@@ -1,6 +1,4 @@
-import { useTranslation } from "react-i18next";
-
-const ChangeLanguage = () => {
+const ChangeLanguage = ({ onLanguageChange }) => {
   const language = [
     { id: 0, name: "中文", value: "zh" },
     { id: 1, name: "English", value: "en" },
@@ -8,17 +6,16 @@ const ChangeLanguage = () => {
     { id: 3, name: "Español", value: "es" },
   ];
 
-  const { i18n } = useTranslation();
-
-  const changeLang = (event) => {
-    const selectedLanguage = event.target.value;
-    console.log(selectedLanguage);
-    i18n.changeLanguage(selectedLanguage);
+  const handleLanguageChange = (newLanguage) => {
+    onLanguageChange(newLanguage);
   };
 
   return (
     <div className="flex flex-col text-red-500">
-      <select className="" onChange={changeLang}>
+      <select
+        className=""
+        onChange={(e) => handleLanguageChange(e.target.value)}
+      >
         {language.map((item) => (
           <option key={item.id} value={item.value}>
             {item.name}

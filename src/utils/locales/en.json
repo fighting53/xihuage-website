@@ -1,4 +1,7 @@
 {
-  "首页": "Home",
-  "加入我们": "About Us"
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact Us"
+  }
 }
