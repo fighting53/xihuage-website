@@ -1,12 +1,21 @@
 import { IntlProvider } from "react-intl";
 import enMessages from "@/utils/locales/en.json";
 import zhMessages from "@/utils/locales/zh.json";
+import frMessages from "@/utils/locales/fr.json";
+import esMessages from "@/utils/locales/es.json";
+import jpMessages from "@/utils/locales/jp.json";
+
 import Header from "@/components/header";
 import { useState } from "react";
+
 const message = {
   en: enMessages,
   zh: zhMessages,
+  fr: frMessages,
+  es: esMessages,
+  jp: jpMessages,
 };
+
 const App = () => {
   const [locale, setLocale] = useState("zh");
   const handleLanguage = (newLanguage) => {

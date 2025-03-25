@@ -4,6 +4,7 @@ const ChangeLanguage = ({ onLanguageChange }) => {
     { id: 1, name: "English", value: "en" },
     { id: 2, name: "Français", value: "fr" },
     { id: 3, name: "Español", value: "es" },
+    { id: 3, name: "日本語", value: "jp" },
   ];
 
   const handleLanguageChange = (newLanguage) => {
@@ -13,7 +14,7 @@ const ChangeLanguage = ({ onLanguageChange }) => {
   return (
     <div className="flex flex-col text-red-500">
       <select
-        className=""
+        className="text-4xl text-red-600"
         onChange={(e) => handleLanguageChange(e.target.value)}
       >
         {language.map((item) => (
