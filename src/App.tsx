@@ -19,8 +19,8 @@ const message = {
 };
 
 const App = () => {
-  const [locale, setLocale] = useState("zh");
-  const handleLanguage = (newLanguage) => {
+  const [locale, setLocale] = useState<string>("zh");
+  const handleLanguage = (newLanguage: string) => {
     setLocale(newLanguage);
   };
   return (
