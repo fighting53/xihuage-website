@@ -6,7 +6,7 @@ import esMessages from "@/utils/locales/es.json";
 import jpMessages from "@/utils/locales/jp.json";
 
 import Header from "@/components/header";
-import Main from "@/views/main";
+import Home from "@/pages/home";
 import Footer from "@/components/footer";
 import { useState } from "react";
 
@@ -27,7 +27,7 @@ const App = () => {
     <IntlProvider locale={locale} messages={message[locale]}>
       <div className="flex width-full flex-col">
         <Header locale={message[locale]} onLanguage={handleLanguage}></Header>
-        <Main></Main>
+        <Home></Home>
         <Footer locale={message[locale]}></Footer>
       </div>
     </IntlProvider>

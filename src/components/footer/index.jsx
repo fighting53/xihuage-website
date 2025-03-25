@@ -1,5 +1,3 @@
-import Logo from "@/assets/logo.jpg";
-
 const Footer = ({ locale }) => {
   console.log(locale, "footer");
   /**

@@ -12,7 +12,7 @@ const Header = ({ locale, onLanguage }) => {
     return Object.entries(data).map(([key, value], index) => ({
       id: index,
       value,
-      url: "/",
+      url: `/${key}`,
     }));
   };
 
