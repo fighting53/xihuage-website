@@ -28,7 +28,7 @@ const App = () => {
       <div className="flex width-full flex-col">
         <Header locale={message[locale]} onLanguage={handleLanguage}></Header>
         <Main></Main>
-        <Footer></Footer>
+        <Footer locale={message[locale]}></Footer>
       </div>
     </IntlProvider>
   );

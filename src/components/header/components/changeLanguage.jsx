@@ -4,7 +4,7 @@ const ChangeLanguage = ({ onLanguageChange }) => {
     { id: 1, name: "English", value: "en" },
     { id: 2, name: "Français", value: "fr" },
     { id: 3, name: "Español", value: "es" },
-    { id: 3, name: "日本語", value: "jp" },
+    { id: 4, name: "日本語", value: "jp" },
   ];
 
   const handleLanguageChange = (newLanguage) => {
