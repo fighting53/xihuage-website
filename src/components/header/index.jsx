@@ -38,7 +38,7 @@ const Header = ({ locale, onLanguage }) => {
           ))}
         </ul>
       </nav>
-      <div className="flex-none ">
+      <div className="flex-none">
         <ChangeLanguage onLanguageChange={handleLanguageChange} />
       </div>
     </header>

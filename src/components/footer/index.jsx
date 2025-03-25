@@ -15,7 +15,7 @@ const Footer = ({ locale }) => {
   const menuList = transformData(locale.footer);
 
   return (
-    <footer className="flex flex-col items-center justify-around text-white px-[40px] py-[20px] w-screen bg-black ">
+    <footer className="flex flex-col items-center justify-around  text-white px-[40px] py-[20px] w-screen bg-black ">
       <div className="flex-none ">
         <ul className="flex items-center justify-center gap-60 px-[40px] text-3xl">
           {menuList.map((item) => (
