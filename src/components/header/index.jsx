@@ -1,5 +1,5 @@
-import ChangeLanguage from "./components/changeLanguage";
-import Logo from "../../assets/logo.jpg";
+import ChangeLanguage from "@/components/header/components/changeLanguage";
+import Logo from "@/assets/logo.jpg";
 
 const Header = () => {
   const menuList = ["首页", "关于我们", "加入我们"];
