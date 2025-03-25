@@ -1,14 +1,12 @@
-import ChangeLanguage from "@/components/header/components/changeLanguage";
+import ChangeLanguage from "./components/changeLanguage";
 import Logo from "@/assets/logo.jpg";
+import { HeaderProps } from "../../types/header";
 
-/**
- * Header 组件
- */
-const Header = ({ locale, onLanguage }) => {
+const Header: React.FC<HeaderProps> = ({ locale, onLanguage }) => {
   /**
    * 将对象转换为特定格式的数组
    */
-  const transformData = (data) => {
+  const transformData = (data: Record<string, string>) => {
     return Object.entries(data).map(([key, value], index) => ({
       id: index,
       value,
@@ -18,11 +16,11 @@ const Header = ({ locale, onLanguage }) => {
 
   const menuList = transformData(locale.nav);
 
-  const handleLanguageChange = (newLanguage) => {
+  const handleLanguageChange = (newLanguage: string) => {
     handleLanguage(newLanguage);
   };
 
-  const handleLanguage = (newLanguage) => {
+  const handleLanguage = (newLanguage: string) => {
     onLanguage(newLanguage);
   };
 

@@ -4,13 +4,12 @@ import zhMessages from "@/utils/locales/zh.json";
 import frMessages from "@/utils/locales/fr.json";
 import esMessages from "@/utils/locales/es.json";
 import jpMessages from "@/utils/locales/jp.json";
-
-import Header from "@/components/header";
+import Header from "./components/header";
 import Home from "./pages/home";
-import Footer from "@/components/footer";
+import Footer from "./components/footer";
 import { useState } from "react";
 
-const message: { [key: string]: Record<string, string> } = {
+const message: { [key: string]: any | unknown } = {
   en: enMessages,
   zh: zhMessages,
   fr: frMessages,

@@ -1,4 +1,9 @@
-const ChangeLanguage = ({ onLanguageChange }) => {
+import React from "react";
+import { ChangeLanguageProps } from "../../../types";
+
+const ChangeLanguage: React.FC<ChangeLanguageProps> = ({
+  onLanguageChange,
+}) => {
   const language = [
     { id: 0, name: "中文", value: "zh" },
     { id: 1, name: "English", value: "en" },
@@ -7,7 +12,7 @@ const ChangeLanguage = ({ onLanguageChange }) => {
     { id: 4, name: "日本語", value: "jp" },
   ];
 
-  const handleLanguageChange = (newLanguage) => {
+  const handleLanguageChange = (newLanguage: string) => {
     onLanguageChange(newLanguage);
   };
 

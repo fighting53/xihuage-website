@@ -1,10 +1,7 @@
-const Footer = ({ locale }) => {
-  console.log(locale, "footer");
-  /**
-   * 将对象转换为特定格式的数组
-   */
-  const transformData = (data) => {
-    return Object.entries(data).map(([key, value], index) => ({
+import { Locale, MenuItem } from "../../types";
+const Footer = ({ locale }: { locale: Locale }) => {
+  const transformData = (data: Record<string, string>): MenuItem[] => {
+    return Object.entries(data).map(([, value], index) => ({
       id: index,
       value,
       url: "/",
