@@ -1,7 +1,19 @@
 {
   "nav": {
     "home": "首页",
+    "blog": "博客",
     "about": "关于我们",
     "contact": "加入我们"
-  }
+  },
+  "footer": {
+    "friendship_link": "友情链接",
+    "contact": "联系我们",
+    "copyright_notice": "版权声明",
+    "disclaimers": "免责声明",
+    "privacy_policy": "隐私政策"
+  },
+  "address": "浙江省杭州市滨江区长河街道滨安路",
+  "copyright": "© 2025 杭州悉画阁文化创意有限公司",
+  "disclaimer": "本站所有内容均为原创，未经授权不得转载",
+  "privacy": "浙ICP备2025158271号"
 }

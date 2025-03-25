@@ -1,7 +1,20 @@
 {
   "nav": {
     "home": "Maison",
+    "blog": "Le blog",
     "about": "à propos de nous",
     "contact": "Contactez-nous"
-  }
+  },
+
+  "footer": {
+    "friendship_link": "Liens d'amitié",
+    "contact": "Contactez - nous",
+    "copyright_notice": "Avis de copyright",
+    "disclaimers": "Disclaimer",
+    "privacy_policy": "Politique de confidentialité"
+  },
+  "address": "Route de binan, rue de Changhe, district de Binjiang, Hangzhou, Province du Zhejiang",
+  "copyright": "© 2025 Hangzhou Xianqiao culture et créativité Co., Ltd",
+  "disclaimer": "Tout le contenu de ce site est original et ne peut être reproduit sans autorisation",
+  "privacy": "No.2025158271 Zhejiang ICP préparation"
 }

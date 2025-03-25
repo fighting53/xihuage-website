@@ -1,7 +1,19 @@
 {
   "nav": {
     "home": "Hogar",
+    "blog": "Blog",
     "about": "sobre nosotros",
     "contact": "Únase a nosotros"
-  }
+  },
+  "footer": {
+    "friendship_link": "Enlace amistoso",
+    "contact": "Contáctanos",
+    "copyright_notice": "Declaración de derechos de autor",
+    "disclaimers": "Declaración de exención de responsabilidad",
+    "privacy_policy": "Política de privacidad"
+  },
+  "address": "Binan road, calle changhe, Distrito de binjiang, ciudad de hangzhou, Provincia de Zhejiang, China",
+  "copyright": "© 2025 Hangzhou xihuage cultural Creative co., Ltd.",
+  "disclaimer": "Todo el contenido de esta estación es original y no se puede reproducir sin autorización.",
+  "privacy": "Preparación ICP de Zhejiang 2025158271"
 }
