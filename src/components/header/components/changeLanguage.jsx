@@ -8,25 +8,25 @@ const ChangeLanguage = () => {
     { id: 3, name: "Español", value: "es" },
   ];
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
-  const changeLanguage = (language) => {
-    console.log(language);
-    i18n.changeLanguage(language.target.value); //切换语言
+  const changeLang = (event) => {
+    const selectedLanguage = event.target.value;
+    console.log(selectedLanguage);
+    i18n.changeLanguage(selectedLanguage);
   };
 
   return (
-    <div className="flex flex-col ">
-      <select className="text-black" onChange={changeLanguage}>
-        {language.map((item) => {
-          return (
-            <option key={item.id} value={item.value}>
-              {item.name}
-            </option>
-          );
-        })}
+    <div className="flex flex-col text-red-500">
+      <select className="" onChange={changeLang}>
+        {language.map((item) => (
+          <option key={item.id} value={item.value}>
+            {item.name}
+          </option>
+        ))}
       </select>
     </div>
   );
 };
+
 export default ChangeLanguage;

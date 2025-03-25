@@ -9,7 +9,7 @@ i18n.use(initReactI18next).init({
     escapeValue: false, //已经处理html转义
   },
   backend: {
-    loadPath: "/locales/{{lng}}.json", //翻译文件路径
+    loadPath: "./locales/{{lng}}.json", //翻译文件路径
   },
 });
 
