@@ -27,9 +27,11 @@ const App = () => {
   return (
     <IntlProvider locale={locale} messages={message[locale]}>
       <Router>
-        <div className="flex width-full flex-col">
+        <div className="flex width-full flex-col min-h-screen">
           <Header locale={message[locale]} onLanguage={handleLanguage} />
-          <AppRoutes />
+          <main className="flex-grow">
+            <AppRoutes />
+          </main>
           <Footer locale={message[locale]} />
         </div>
       </Router>
