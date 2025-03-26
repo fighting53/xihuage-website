@@ -30,7 +30,7 @@ const App = () => {
         <div className="flex width-full flex-col min-h-screen">
           <Header locale={message[locale]} onLanguage={handleLanguage} />
           <main className="flex-grow">
-            <AppRoutes />
+            <AppRoutes locale={message[locale]} />
           </main>
           <Footer locale={message[locale]} />
         </div>
