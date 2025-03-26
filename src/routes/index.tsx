@@ -1,3 +1,4 @@
+import Join from "@/pages/join";
 import React, { lazy, Suspense } from "react";
 import { useRoutes, Navigate } from "react-router-dom";
 
@@ -12,10 +13,19 @@ const FriendshipLink = lazy(() => import("@/pages/friendship-link"));
 
 // 路由配置数组
 const routes = [
+  // {
+  //   path: "/",
+  //   element: (() => {
+  //     const externalUrl = import.meta.env.VITE_ECOMMERCE_URL;
+  //     window.location.href = externalUrl;
+  //     return null;
+  //   })(),
+  // },
   { path: "/", element: <Navigate to="/home" replace /> }, // 重定向
   { path: "/home", element: <Home /> },
   { path: "/blog", element: <Blog /> },
   { path: "/about", element: <About /> },
+  { path: "/join", element: <Join /> },
   { path: "/contact", element: <Contact /> },
   { path: "/friendship_link", element: <FriendshipLink /> },
   { path: "/product/:id", element: <Product /> },
