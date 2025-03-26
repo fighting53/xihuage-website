@@ -5,6 +5,15 @@
     "about": "sobre nosotros",
     "join": "Únase a nosotros"
   },
+  "join": {
+    "title": "Únete a nosotros",
+    "description": "¡Únete a nosotros y creamos un futuro mejor juntos!",
+    "join_us": "Únete ahora",
+    "why_join": "¿Por qué unirse?",
+    "why_join_desc": "Únete a nuestro equipo y tendrás la oportunidad de participar en diversos proyectos creativos y crecer junto a un grupo de socios apasionados y talentosos.",
+    "what_we_offer": "¿Qué podemos ofrecer?",
+    "what_we_offer_desc": "Ofrecemos salarios competitivos, un entorno de trabajo flexible y abundantes oportunidades de aprendizaje y desarrollo."
+  },
   "footer": {
     "friendship_link": "Enlace amistoso",
     "contact": "Contáctanos",

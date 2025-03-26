@@ -5,7 +5,15 @@
     "about": "à propos de nous",
     "join": "Contactez-nous"
   },
-
+  "join": {
+    "title": "Rejoignez-nous",
+    "description": "Rejoignez-nous et créons ensemble un avenir meilleur !",
+    "join_us": "Rejoignez-nous maintenant",
+    "why_join": "Pourquoi rejoindre ?",
+    "why_join_desc": "Rejoignez notre équipe et vous aurez l'opportunité de participer à divers projets créatifs et de grandir avec un groupe de partenaires passionnés et talentueux.",
+    "what_we_offer": "Que pouvons-nous offrir ?",
+    "what_we_offer_desc": "Nous offrons des salaires compétitifs, un environnement de travail flexible et de nombreuses opportunités d'apprentissage et de développement."
+  },
   "footer": {
     "friendship_link": "Liens d'amitié",
     "contact": "Contactez - nous",

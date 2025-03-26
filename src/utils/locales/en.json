@@ -5,6 +5,15 @@
     "about": "About Us",
     "join": "Contact Us"
   },
+  "join": {
+    "title": "Join us",
+    "description": "Join us and create a better future together!",
+    "join_us": "Join now",
+    "why_join": "Why join?",
+    "why_join_desc": "Join our team and you will have the opportunity to participate in various creative projects and grow together with a group of passionate and talented partners.",
+    "what_we_offer": "What can we offer?",
+    "what_we_offer_desc": "We offer competitive salaries, a flexible working environment and rich learning and development opportunities."
+  },
   "footer": {
     "friendship_link": "Friendship Link",
     "contact": "Contact Us",

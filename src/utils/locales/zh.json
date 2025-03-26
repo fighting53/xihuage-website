@@ -5,6 +5,16 @@
     "about": "关于我们",
     "join": "加入我们"
   },
+  "join": {
+    "title": "加入我们",
+    "description": "加入我们，一起创造美好的未来！",
+    "join_us": "立即加入",
+    "why_join": "为什么加入？",
+    "why_join_desc": "加入我们的团队，你将有机会参与到各种创意项目中，与一群充满激情和才华的伙伴共同成长。",
+    "what_we_offer": "我们能提供什么？",
+    "what_we_offer_desc": "我们提供具有竞争力的薪酬、灵活的工作环境以及丰富的学习和发展机会。"
+  },
+
   "footer": {
     "friendship_link": "友情链接",
     "contact": "联系我们",
