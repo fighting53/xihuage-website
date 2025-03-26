@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import { Locale, MenuItem } from "../../types";
 const Footer = ({ locale }: { locale: Locale }) => {
   const transformData = (data: Record<string, string>): MenuItem[] => {
-    return Object.entries(data).map(([, value], index) => ({
+    return Object.entries(data).map(([key, value], index) => ({
       id: index,
       value,
-      url: "/",
+      url: `/${key}`,
     }));
   };
   const menuList = transformData(locale.footer);
@@ -14,7 +15,9 @@ const Footer = ({ locale }: { locale: Locale }) => {
       <div className="flex-none ">
         <ul className="flex items-center justify-center gap-60 px-[40px] text-3xl">
           {menuList.map((item) => (
-            <li key={item.id}>{item.value}</li>
+            <li key={item.id}>
+              <Link to={item.url}>{item.value}</Link>
+            </li>
           ))}
         </ul>
       </div>
