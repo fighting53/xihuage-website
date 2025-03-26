@@ -1,6 +1,7 @@
 import ChangeLanguage from "./components/changeLanguage";
 import Logo from "@/assets/logo.jpg";
 import { HeaderProps } from "../../types/header";
+import { Link } from "react-router-dom";
 
 const Header: React.FC<HeaderProps> = ({ locale, onLanguage }) => {
   /**
@@ -15,6 +16,7 @@ const Header: React.FC<HeaderProps> = ({ locale, onLanguage }) => {
   };
 
   const menuList = transformData(locale.nav);
+  console.log(menuList, "menuList");
 
   const handleLanguageChange = (newLanguage: string) => {
     handleLanguage(newLanguage);
@@ -32,7 +34,9 @@ const Header: React.FC<HeaderProps> = ({ locale, onLanguage }) => {
       <nav className="grow text-white">
         <ul className="flex items-center justify-center gap-60 px-[40px] text-3xl">
           {menuList.map((item) => (
-            <li key={item.id}>{item.value}</li>
+            <li key={item.id}>
+              <Link to={item.url}>{item.value}</Link>
+            </li>
           ))}
         </ul>
       </nav>

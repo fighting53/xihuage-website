@@ -5,9 +5,11 @@ import frMessages from "@/utils/locales/fr.json";
 import esMessages from "@/utils/locales/es.json";
 import jpMessages from "@/utils/locales/jp.json";
 import Header from "./components/header";
-import Home from "./pages/home";
+// import Home from "./pages/home";
 import Footer from "./components/footer";
+import AppRoutes from "./routes";
 import { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const message: { [key: string]: any | unknown } = {
   en: enMessages,
@@ -24,11 +26,13 @@ const App = () => {
   };
   return (
     <IntlProvider locale={locale} messages={message[locale]}>
-      <div className="flex width-full flex-col">
-        <Header locale={message[locale]} onLanguage={handleLanguage}></Header>
-        <Home></Home>
-        <Footer locale={message[locale]}></Footer>
-      </div>
+      <Router>
+        <div className="flex width-full flex-col">
+          <Header locale={message[locale]} onLanguage={handleLanguage} />
+          <AppRoutes />
+          <Footer locale={message[locale]} />
+        </div>
+      </Router>
     </IntlProvider>
   );
 };
