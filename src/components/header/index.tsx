@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({ locale, onLanguage }) => {
   };
 
   return (
-    <header className="flex items-center justify-around  px-[40px] py-[20px] w-screen bg-black ">
+    <header className="flex items-center justify-around  px-[40px] py-[20px] bg-black ">
       <div className=" flex-none">
         <img src={Logo} alt="xihuage | sigurai logo" />
       </div>
