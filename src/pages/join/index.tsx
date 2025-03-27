@@ -1,9 +1,6 @@
-import join from "@/assets/join.png";
-
 const Join: React.FC<{
   locale: { join: { title: string; description: string; join_us: string } };
 }> = ({ locale }) => {
-  console.log(locale, "localelocale");
   return (
     <div className="flex items-center mt-[3.75rem]">
       <div className="w-1/2 text-center">
@@ -24,7 +21,7 @@ const Join: React.FC<{
       </div>
 
       <div className="flex-grow">
-        <img src={join} alt="xihuage | sigurai 加入我们" />
+        <img src="/images/join.png" alt="xihuage | sigurai 加入我们" />
       </div>
     </div>
   );
