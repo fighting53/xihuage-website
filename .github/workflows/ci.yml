@@ -1,0 +1,61 @@
+name: CI/CD for Next.js
+
+# 触发条件：在 push 或 pull_request 时触发
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# 定义工作流的任务
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检查代码库
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "npm"
+
+      # 安装依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 构建项目
+      - name: Build project
+        run: npm run build
+
+      # 运行测试
+      - name: Run tests
+        run: npm run test
+
+      # 部署到阿里云服务器
+      - name: Deploy to Alibaba Cloud
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            # 跳过主机密钥验证
+            export SSH_KNOWN_HOSTS=/dev/null
+            export SSH_OPTIONS="-o StrictHostKeyChecking=no"
+            # 创建项目目录
+            mkdir -p /var/www/xihuage
+            # 上传构建文件
+            rm -rf /var/www/xihuage/*
+            scp -r .next/* /var/www/xihuage/
+            # 安装依赖并启动服务
+            cd /var/www/xihuage
+            npm install --production
+            pm2 start npm --name "xihuage" -- start
